@@ -7,10 +7,13 @@ func _process(delta):
 
 	
 
-func _on_texture_button_pressed():
-	get_tree().change_scene_to_file("res://scene/you win.tscn")
-
-
 func _on_texture_button_pressed2():
 	get_tree().change_scene_to_file("res://scene/game over.tscn")
 	
+
+
+func _on_area_2d_body_entered(body):
+	get_tree().change_scene_to_file("res://scene/you win.tscn")
+
+
+

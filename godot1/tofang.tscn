@@ -14,7 +14,7 @@
 [sub_resource type="SpriteFrames" id="SpriteFrames_e546t"]
 animations = [{
 "frames": [{
-"duration": 1.0,
+"duration": 40.0,
 "texture": ExtResource("2_bjav5")
 }, {
 "duration": 1.0,
@@ -35,9 +35,9 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("8_q8oq4")
 }],
-"loop": true,
+"loop": false,
 "name": &"top",
-"speed": 5.0
+"speed": 3.0
 }]
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
