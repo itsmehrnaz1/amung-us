@@ -1,12 +1,252 @@
-[gd_scene load_steps=3 format=3 uid="uid://cbpavxpjei64j"]
+[gd_scene load_steps=20 format=3 uid="uid://cbpavxpjei64j"]
 
 [ext_resource type="Script" path="res://scene/local game.gd" id="1_3s51r"]
+[ext_resource type="Texture2D" uid="uid://bnx05ldoo4qdk" path="res://assest/bg game.jpg" id="2_0dm7g"]
+[ext_resource type="PackedScene" uid="uid://cj0g1a8botjfq" path="res://scene/character_body_2d.tscn" id="3_68pux"]
+[ext_resource type="Texture2D" uid="uid://d0mkqto46p4od" path="res://assest/bggg.png" id="4_5kng2"]
+[ext_resource type="Texture2D" uid="uid://bksisup5u6wgc" path="res://assest/home.png" id="4_movdw"]
+[ext_resource type="Texture2D" uid="uid://wryggrlg3323" path="res://assest/sky.png" id="5_k1xa2"]
+[ext_resource type="Texture2D" uid="uid://cd0v8jw1ec58a" path="res://assest/adamak.png" id="7_ixapt"]
+[ext_resource type="PackedScene" uid="uid://bwpv2kfdd3481" path="res://character_body_2d.tscn" id="8_kx1wr"]
+[ext_resource type="PackedScene" uid="uid://qltal0b53jk3" path="res://tofang.tscn" id="9_mk3he"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dy68f"]
+size = Vector2(216.5, 339)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hik6j"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lg865"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_v1eei"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_f47cf"]
-size = Vector2(1149, 59)
+size = Vector2(3415, 59)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_txlkq"]
+size = Vector2(226, 265)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hgjkn"]
+size = Vector2(348.25, 384.172)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_k4qdi"]
+size = Vector2(247, 468)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_txfph"]
+size = Vector2(1214, 1185)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_l45y6"]
+size = Vector2(188, 1258.5)
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_3s51r")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_left = 3.0
+offset_top = 27.0
+offset_right = 1155.0
+offset_bottom = 666.0
+texture = ExtResource("2_0dm7g")
+expand_mode = 1
+
+[node name="StaticBody2D" type="StaticBody2D" parent="TextureRect"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TextureRect/StaticBody2D"]
+position = Vector2(1819, 445.5)
+shape = SubResource("RectangleShape2D_dy68f")
+
+[node name="TextureRect14" type="TextureRect" parent="."]
+offset_left = 6.0
+offset_top = 665.0
+offset_right = 1158.0
+offset_bottom = 1304.0
+texture = ExtResource("2_0dm7g")
+expand_mode = 1
+flip_v = true
+
+[node name="StaticBody2D" type="StaticBody2D" parent="TextureRect14"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TextureRect14/StaticBody2D"]
+position = Vector2(1819, 445.5)
+shape = SubResource("RectangleShape2D_dy68f")
+
+[node name="TextureRect15" type="TextureRect" parent="."]
+offset_left = 1134.0
+offset_top = 662.0
+offset_right = 2286.0
+offset_bottom = 1301.0
+texture = ExtResource("2_0dm7g")
+expand_mode = 1
+flip_v = true
+
+[node name="StaticBody2D" type="StaticBody2D" parent="TextureRect15"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TextureRect15/StaticBody2D"]
+position = Vector2(1819, 445.5)
+shape = SubResource("RectangleShape2D_dy68f")
+
+[node name="TextureRect16" type="TextureRect" parent="."]
+offset_left = 2286.0
+offset_top = 660.0
+offset_right = 3459.0
+offset_bottom = 1299.0
+texture = ExtResource("2_0dm7g")
+expand_mode = 1
+flip_v = true
+
+[node name="StaticBody2D" type="StaticBody2D" parent="TextureRect16"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TextureRect16/StaticBody2D"]
+position = Vector2(1819, 445.5)
+shape = SubResource("RectangleShape2D_dy68f")
+
+[node name="TextureRect17" type="TextureRect" parent="."]
+offset_left = 3458.0
+offset_top = 659.0
+offset_right = 4610.0
+offset_bottom = 1298.0
+texture = ExtResource("2_0dm7g")
+expand_mode = 1
+flip_v = true
+
+[node name="StaticBody2D" type="StaticBody2D" parent="TextureRect17"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TextureRect17/StaticBody2D"]
+shape = SubResource("RectangleShape2D_hik6j")
+
+[node name="TextureRect18" type="TextureRect" parent="."]
+offset_left = 4610.0
+offset_top = 659.0
+offset_right = 5762.0
+offset_bottom = 1298.0
+texture = ExtResource("2_0dm7g")
+expand_mode = 1
+flip_v = true
+
+[node name="StaticBody2D" type="StaticBody2D" parent="TextureRect18"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TextureRect18/StaticBody2D"]
+shape = SubResource("RectangleShape2D_lg865")
+
+[node name="TextureRect19" type="TextureRect" parent="."]
+offset_left = 5738.0
+offset_top = 659.0
+offset_right = 6890.0
+offset_bottom = 1298.0
+texture = ExtResource("2_0dm7g")
+expand_mode = 1
+flip_v = true
+
+[node name="StaticBody2D" type="StaticBody2D" parent="TextureRect19"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TextureRect19/StaticBody2D"]
+shape = SubResource("RectangleShape2D_v1eei")
+
+[node name="TextureRect6" type="TextureRect" parent="."]
+offset_left = 2252.0
+offset_top = 22.0
+offset_right = 3404.0
+offset_bottom = 661.0
+texture = ExtResource("2_0dm7g")
+expand_mode = 1
+
+[node name="TextureRect4" type="TextureRect" parent="."]
+offset_left = 2295.0
+offset_top = -573.0
+offset_right = 3453.0
+offset_bottom = 58.0
+texture = ExtResource("5_k1xa2")
+expand_mode = 1
+
+[node name="TextureRect5" type="TextureRect" parent="."]
+offset_left = 3442.0
+offset_top = -618.0
+offset_right = 4600.0
+offset_bottom = 13.0
+texture = ExtResource("5_k1xa2")
+expand_mode = 1
+
+[node name="TextureRect8" type="TextureRect" parent="."]
+offset_left = 4593.0
+offset_top = -618.0
+offset_right = 5751.0
+offset_bottom = 13.0
+texture = ExtResource("5_k1xa2")
+expand_mode = 1
+
+[node name="TextureRect10" type="TextureRect" parent="."]
+offset_left = 4593.0
+offset_top = -618.0
+offset_right = 5751.0
+offset_bottom = 13.0
+texture = ExtResource("5_k1xa2")
+expand_mode = 1
+
+[node name="TextureRect9" type="TextureRect" parent="."]
+offset_left = 5729.0
+offset_top = -618.0
+offset_right = 6887.0
+offset_bottom = 13.0
+texture = ExtResource("5_k1xa2")
+expand_mode = 1
+
+[node name="TextureRect7" type="TextureRect" parent="."]
+offset_left = 3461.0
+offset_top = 11.0
+offset_right = 4619.0
+offset_bottom = 659.0
+texture = ExtResource("2_0dm7g")
+expand_mode = 1
+
+[node name="thief" type="TextureRect" parent="."]
+offset_left = 4945.0
+offset_top = 19.0
+offset_right = 5272.0
+offset_bottom = 667.0
+expand_mode = 1
+
+[node name="TextureRect12" type="TextureRect" parent="."]
+offset_left = 5739.0
+offset_top = 10.0
+offset_right = 6897.0
+offset_bottom = 658.0
+texture = ExtResource("2_0dm7g")
+expand_mode = 1
+
+[node name="TextureRect11" type="TextureRect" parent="."]
+offset_left = 4614.0
+offset_top = 10.0
+offset_right = 5772.0
+offset_bottom = 658.0
+texture = ExtResource("4_movdw")
+expand_mode = 1
+
+[node name="TextureRect13" type="TextureRect" parent="."]
+offset_left = 5476.0
+offset_top = 177.0
+offset_right = 5694.0
+offset_bottom = 493.0
+expand_mode = 1
+
+[node name="TextureRect2" type="TextureRect" parent="."]
+offset_left = -3.0
+offset_top = -603.0
+offset_right = 1155.0
+offset_bottom = 28.0
+texture = ExtResource("5_k1xa2")
+expand_mode = 1
+
+[node name="TextureRect3" type="TextureRect" parent="."]
+offset_left = 1151.0
+offset_top = -583.0
+offset_right = 2309.0
+offset_bottom = 73.0
+texture = ExtResource("5_k1xa2")
+expand_mode = 1
+
+[node name="TextureRect" type="TextureRect" parent="TextureRect3"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 position = Vector2(251, 633)
@@ -14,3 +254,134 @@ position = Vector2(251, 633)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
 position = Vector2(324.5, -19.5)
 shape = SubResource("RectangleShape2D_f47cf")
+
+[node name="TextureRect" type="TextureRect" parent="StaticBody2D"]
+offset_left = 878.0
+offset_top = -608.0
+offset_right = 2030.0
+offset_bottom = 31.0
+texture = ExtResource("4_5kng2")
+expand_mode = 1
+
+[node name="StaticBody2D" type="StaticBody2D" parent="StaticBody2D"]
+position = Vector2(1225, 1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D/StaticBody2D"]
+position = Vector2(324.5, -19.5)
+shape = SubResource("RectangleShape2D_f47cf")
+
+[node name="TextureRect" type="TextureRect" parent="StaticBody2D/StaticBody2D"]
+offset_left = 837.0
+offset_top = -613.0
+offset_right = 1989.0
+offset_bottom = 26.0
+texture = ExtResource("4_5kng2")
+expand_mode = 1
+flip_h = true
+
+[node name="StaticBody2D" type="StaticBody2D" parent="StaticBody2D/StaticBody2D"]
+position = Vector2(1151, -1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D/StaticBody2D/StaticBody2D"]
+position = Vector2(1443.5, -19.5)
+shape = SubResource("RectangleShape2D_f47cf")
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("3_68pux")]
+position = Vector2(-106, -12)
+
+[node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
+position = Vector2(742, 308)
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2"]
+position = Vector2(1425, 533.5)
+shape = SubResource("RectangleShape2D_txlkq")
+
+[node name="StaticBody2D10" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D10"]
+position = Vector2(3167, 528)
+shape = SubResource("RectangleShape2D_txlkq")
+
+[node name="StaticBody2D7" type="StaticBody2D" parent="."]
+
+[node name="StaticBody2D3" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D3"]
+position = Vector2(1754.25, 470.086)
+shape = SubResource("RectangleShape2D_hgjkn")
+
+[node name="StaticBody2D6" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D6"]
+position = Vector2(2786.13, 464.078)
+shape = SubResource("RectangleShape2D_hgjkn")
+
+[node name="StaticBody2D4" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D4"]
+position = Vector2(2121, 425)
+shape = SubResource("RectangleShape2D_k4qdi")
+
+[node name="StaticBody2D5" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D5"]
+position = Vector2(2438.5, 417)
+shape = SubResource("RectangleShape2D_k4qdi")
+
+[node name="StaticBody2D8" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D8"]
+position = Vector2(6285, 33)
+shape = SubResource("RectangleShape2D_txfph")
+
+[node name="StaticBody2D9" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D9"]
+position = Vector2(14, 23.25)
+shape = SubResource("RectangleShape2D_l45y6")
+
+[node name="TextureButton" type="TextureButton" parent="."]
+offset_left = 5478.0
+offset_top = 180.0
+offset_right = 5834.0
+offset_bottom = 496.0
+
+[node name="Label" type="Label" parent="."]
+offset_left = 5856.0
+offset_top = 124.0
+offset_right = 6879.0
+offset_bottom = 540.0
+theme_override_font_sizes/font_size = 150
+text = "Clik Here
+      <="
+
+[node name="TextureRect20" type="TextureRect" parent="."]
+offset_left = 4994.0
+offset_top = 199.0
+offset_right = 5408.0
+offset_bottom = 613.0
+texture = ExtResource("7_ixapt")
+expand_mode = 1
+
+[node name="TextureRect23" type="TextureRect" parent="."]
+offset_left = 4518.0
+offset_top = 266.0
+offset_right = 4684.0
+offset_bottom = 376.0
+
+[node name="TextureRect24" type="TextureRect" parent="."]
+offset_left = 4746.0
+offset_top = 152.0
+offset_right = 4956.0
+offset_bottom = 262.0
+
+[node name="CharacterBody2D2" parent="." instance=ExtResource("8_kx1wr")]
+position = Vector2(4444, -94)
+
+[node name="CharacterBody2D3" parent="." instance=ExtResource("9_mk3he")]
+position = Vector2(3706, 48)
+
+[connection signal="mouse_entered" from="TextureRect13" to="." method="_on_texture_rect_13_mouse_entered"]
+[connection signal="pressed" from="TextureButton" to="." method="_on_texture_button_pressed"]

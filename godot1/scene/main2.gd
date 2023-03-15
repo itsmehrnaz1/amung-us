@@ -37,3 +37,7 @@ func _on_texture_button_2_pressed():
 func _on_button_pressed():
 	$Button.text = ""
 	
+
+
+func _on_button_pressed4():
+	get_tree().change_scene_to_file("res://scene/free play.tscn")

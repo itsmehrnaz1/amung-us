@@ -102,21 +102,14 @@ offset_bottom = 620.0
 theme_override_font_sizes/font_size = 32
 text = "Enter Code"
 
-[node name="TextEdit" type="TextEdit" parent="."]
-visible = false
+[node name="TextEdit2" type="TextEdit" parent="."]
 layout_mode = 0
-offset_left = 488.0
-offset_top = 565.0
-offset_right = 666.0
-offset_bottom = 609.0
-
-[node name="Button2" type="Button" parent="."]
-layout_mode = 0
-offset_left = 339.0
-offset_top = 37.0
-offset_right = 815.0
-offset_bottom = 108.0
-theme_override_font_sizes/font_size = 50
+offset_left = 331.0
+offset_top = 35.0
+offset_right = 837.0
+offset_bottom = 145.0
+theme_override_font_sizes/font_size = 45
+text = "    "
 
 [connection signal="pressed" from="back" to="." method="_on_back_pressed"]
 [connection signal="pressed" from="creat game- Host" to="." method="_on_creat_game_host_pressed"]
@@ -124,4 +117,4 @@ theme_override_font_sizes/font_size = 50
 [connection signal="pressed" from="TextureButton" to="." method="_on_texture_button_pressed"]
 [connection signal="pressed" from="TextureButton2" to="." method="_on_texture_button_2_pressed"]
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
-[connection signal="text_changed" from="TextEdit" to="." method="_on_text_edit_text_changed"]
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed4"]
