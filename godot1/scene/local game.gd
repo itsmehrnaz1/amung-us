@@ -1,15 +1,33 @@
-extends Control
+extends Node2D
 
-
-# Called when the node enters the scene tree for the first time.
+var scene = preload("res://character_body_2d.tscn")
 func _ready():
-	pass # Replace with function body.
+	var character_body_2d = scene.instance()
+	add_child(character_body_2d)
 
-
+	
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	pass
-func _input(ev):
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+"""func _input(ev):
 	if Input.is_key_pressed(KEY_LEFT):
 		$m.flip_h = true
 		$m.position.x -= 10
@@ -29,5 +47,5 @@ func jump():
 		tween.tween_property($m, "position:y", $m.position.y - 100, 0.2)
 		tween.set_ease(Tween.EASE_IN)
 		tween.tween_property($m, "position:y", $m.position.y, 0.1)
-		tween.play()
+		tween.play()"""
 		
