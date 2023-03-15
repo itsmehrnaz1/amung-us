@@ -1,0 +1,92 @@
+[gd_scene load_steps=3 format=3 uid="uid://bw3ktbx2ty36q"]
+
+[ext_resource type="Script" path="res://scene/mafias.gd" id="1_ap240"]
+[ext_resource type="Texture2D" uid="uid://b5neyqtlkplq7" path="res://assest/mafias (1).jpg" id="2_l4yhs"]
+
+[node name="mafias" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ap240")
+
+[node name="bg" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -19.0
+offset_top = 3.0
+offset_right = 4.0
+offset_bottom = 3.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_l4yhs")
+expand_mode = 1
+
+[node name="m1" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 26.0
+offset_top = 195.0
+offset_right = 136.0
+offset_bottom = 421.0
+
+[node name="m2" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 287.0
+offset_top = 192.0
+offset_right = 397.0
+offset_bottom = 418.0
+
+[node name="m3" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 569.0
+offset_top = 204.0
+offset_right = 679.0
+offset_bottom = 430.0
+
+[node name="m4" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 858.0
+offset_top = 203.0
+offset_right = 968.0
+offset_bottom = 429.0
+
+[node name="m5" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 151.0
+offset_top = 401.0
+offset_right = 261.0
+offset_bottom = 627.0
+
+[node name="m6" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 440.0
+offset_top = 417.0
+offset_right = 550.0
+offset_bottom = 643.0
+
+[node name="m7" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 713.0
+offset_top = 413.0
+offset_right = 823.0
+offset_bottom = 639.0
+
+[node name="m8" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 1019.0
+offset_top = 401.0
+offset_right = 1129.0
+offset_bottom = 627.0
+
+[connection signal="pressed" from="m1" to="." method="_on_m_1_pressed"]
+[connection signal="pressed" from="m2" to="." method="_on_m_2_pressed"]
+[connection signal="pressed" from="m3" to="." method="_on_m_3_pressed"]
+[connection signal="pressed" from="m4" to="." method="_on_m_4_pressed"]
+[connection signal="pressed" from="m5" to="." method="_on_m_5_pressed"]
+[connection signal="pressed" from="m6" to="." method="_on_m_6_pressed"]
+[connection signal="pressed" from="m7" to="." method="_on_m_7_pressed"]
+[connection signal="pressed" from="m8" to="." method="_on_m_8_pressed"]

@@ -1,0 +1,36 @@
+[gd_scene load_steps=4 format=3 uid="uid://ddas856k4prte"]
+
+[ext_resource type="Script" path="res://scene/coming soon L3.gd" id="1_ggug4"]
+[ext_resource type="Texture2D" uid="uid://cotl8dqiydadm" path="res://assest/coming soon L3.jpg" id="2_b1dg6"]
+[ext_resource type="Texture2D" uid="uid://otrdrwari4v4" path="res://assest/black..png" id="3_07f1f"]
+
+[node name="coming soon L3" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ggug4")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -30.0
+offset_top = 3.0
+offset_right = -30.0
+offset_bottom = 3.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_b1dg6")
+expand_mode = 1
+
+[node name="TextureRect2" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 1089.0
+offset_top = -18.0
+offset_right = 1165.0
+offset_bottom = 679.0
+texture = ExtResource("3_07f1f")

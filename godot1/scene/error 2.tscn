@@ -1,0 +1,46 @@
+[gd_scene load_steps=4 format=3 uid="uid://bm8ht8kexpm5i"]
+
+[ext_resource type="Texture2D" uid="uid://b3cc7xspythw" path="res://assest/error 1.jpg" id="1_6bqqv"]
+[ext_resource type="Script" path="res://scene/error 2.gd" id="1_rnuxj"]
+[ext_resource type="Texture2D" uid="uid://otrdrwari4v4" path="res://assest/black..png" id="2_qy4e8"]
+
+[node name="error 2" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_rnuxj")
+
+[node name="bg" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.013
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 4.976
+offset_top = -9.0
+offset_right = 13.0
+offset_bottom = 12.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_6bqqv")
+expand_mode = 1
+
+[node name="black" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = -204.0
+offset_top = -61.0
+offset_right = 108.0
+offset_bottom = 54.0
+texture = ExtResource("2_qy4e8")
+
+[node name="TextureButton" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 259.0
+offset_top = 249.0
+offset_right = 299.0
+offset_bottom = 289.0
+
+[connection signal="pressed" from="TextureButton" to="." method="_on_texture_button_pressed"]

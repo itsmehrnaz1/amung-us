@@ -1,0 +1,58 @@
+[gd_scene load_steps=4 format=3 uid="uid://rvuq8uuu3mmx"]
+
+[ext_resource type="Script" path="res://scene/public.gd" id="1_q3huk"]
+[ext_resource type="Texture2D" uid="uid://x0vjp2y5fdmb" path="res://assest/publi2.png" id="2_s02iv"]
+[ext_resource type="Texture2D" uid="uid://otrdrwari4v4" path="res://assest/black..png" id="3_gjcae"]
+
+[node name="public" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_q3huk")
+
+[node name="public" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_s02iv")
+expand_mode = 1
+
+[node name="black" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 458.0
+offset_top = 164.0
+offset_right = 895.0
+offset_bottom = 216.0
+texture = ExtResource("3_gjcae")
+expand_mode = 1
+
+[node name="black2" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = -311.0
+offset_top = -10.0
+offset_right = 126.0
+offset_bottom = 42.0
+texture = ExtResource("3_gjcae")
+expand_mode = 1
+
+[node name="back" type="TextureButton" parent="."]
+layout_mode = 0
+offset_top = 589.0
+offset_right = 101.0
+offset_bottom = 629.0
+
+[node name="fort" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 292.0
+offset_top = 255.0
+offset_right = 858.0
+offset_bottom = 318.0
+
+[connection signal="pressed" from="back" to="." method="_on_back_pressed"]
+[connection signal="pressed" from="fort" to="." method="_on_fort_pressed"]

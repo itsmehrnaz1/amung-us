@@ -1,0 +1,77 @@
+[gd_scene load_steps=4 format=3 uid="uid://clb8ehyk2b718"]
+
+[ext_resource type="Script" path="res://scene/sound.gd" id="1_jcnpc"]
+[ext_resource type="Texture2D" uid="uid://dhrw36f4hfg7g" path="res://assest/sound.jpg" id="2_6jsor"]
+[ext_resource type="Texture2D" uid="uid://dbeb7ndtro1h8" path="res://assest/General.jpg" id="3_3grrb"]
+
+[node name="sound" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_jcnpc")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -45.0
+offset_right = 102.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_6jsor")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 704.0
+offset_top = 286.0
+offset_right = 761.0
+offset_bottom = 426.0
+theme_override_font_sizes/font_size = 88
+text = "+"
+
+[node name="Label2" type="Label" parent="."]
+layout_mode = 0
+offset_left = 461.0
+offset_top = 257.0
+offset_right = 518.0
+offset_bottom = 417.0
+theme_override_font_sizes/font_size = 115
+text = "-"
+
+[node name="TextureButton" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 713.0
+offset_top = 331.0
+offset_right = 753.0
+offset_bottom = 371.0
+
+[node name="TextureButton2" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 461.0
+offset_top = 331.0
+offset_right = 501.0
+offset_bottom = 371.0
+
+[node name="TextureButton3" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 288.0
+offset_top = 25.0
+offset_right = 328.0
+offset_bottom = 65.0
+
+[node name="TextureButton4" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 357.0
+offset_top = 29.0
+offset_right = 540.0
+offset_bottom = 85.0
+texture_pressed = ExtResource("3_3grrb")
+
+[connection signal="pressed" from="TextureButton" to="." method="_on_texture_button_pressed"]
+[connection signal="pressed" from="TextureButton2" to="." method="_on_texture_button_2_pressed"]
+[connection signal="pressed" from="TextureButton3" to="." method="_on_texture_button_3_pressed"]

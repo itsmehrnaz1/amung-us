@@ -1,0 +1,60 @@
+[gd_scene load_steps=5 format=3 uid="uid://bu6lngydxe884"]
+
+[ext_resource type="Texture2D" uid="uid://cs8f78empjygd" path="res://assest/language.png" id="1_2xm61"]
+[ext_resource type="Script" path="res://scene/languge.gd" id="1_8nlje"]
+[ext_resource type="Texture2D" uid="uid://bj2qp0lr5tbjh" path="res://assest/language2.png" id="3_1j7rp"]
+[ext_resource type="Texture2D" uid="uid://dbeb7ndtro1h8" path="res://assest/General.jpg" id="4_0cr58"]
+
+[node name="languge" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_8nlje")
+
+[node name="bg" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_2xm61")
+expand_mode = 1
+
+[node name="exit" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 15.0
+offset_top = 586.0
+offset_right = 112.0
+offset_bottom = 633.0
+
+[node name="TextureButton" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 234.0
+offset_top = 22.0
+offset_right = 274.0
+offset_bottom = 62.0
+
+[node name="english clik" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 341.0
+offset_top = 177.0
+offset_right = 815.0
+offset_bottom = 262.0
+texture_pressed = ExtResource("3_1j7rp")
+
+[node name="General" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 317.0
+offset_top = 27.0
+offset_right = 500.0
+offset_bottom = 83.0
+texture_pressed = ExtResource("4_0cr58")
+
+[connection signal="pressed" from="exit" to="." method="_on_texture_button_pressed"]
+[connection signal="pressed" from="TextureButton" to="." method="_on_texture_button_pressed"]
+[connection signal="pressed" from="english clik" to="." method="_on_english_clik_pressed"]
+[connection signal="pressed" from="General" to="." method="_on_general_pressed"]

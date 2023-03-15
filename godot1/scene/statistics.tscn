@@ -1,0 +1,87 @@
+[gd_scene load_steps=4 format=3 uid="uid://cw7sd86wxbc1l"]
+
+[ext_resource type="Script" path="res://scene/statistics.gd" id="1_imdjf"]
+[ext_resource type="Texture2D" uid="uid://dtj887gqmixy4" path="res://assest/statistics.jpeg" id="2_e6yrr"]
+[ext_resource type="Texture2D" uid="uid://otrdrwari4v4" path="res://assest/black..png" id="3_puvni"]
+
+[node name="statistics" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_imdjf")
+
+[node name="bg" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_e6yrr")
+expand_mode = 1
+
+[node name="black" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = -3.0
+offset_top = 67.0
+offset_right = 129.0
+offset_bottom = 372.0
+texture = ExtResource("3_puvni")
+expand_mode = 1
+
+[node name="black2" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = -19.0
+offset_top = -174.0
+offset_right = 371.0
+offset_bottom = 32.0
+texture = ExtResource("3_puvni")
+expand_mode = 1
+
+[node name="black3" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 846.0
+offset_top = 520.0
+offset_right = 986.0
+offset_bottom = 630.0
+texture = ExtResource("3_puvni")
+expand_mode = 1
+
+[node name="black4" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 161.0
+offset_top = 529.0
+offset_right = 305.0
+offset_bottom = 639.0
+texture = ExtResource("3_puvni")
+expand_mode = 1
+
+[node name="black5" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 222.0
+offset_top = 611.0
+offset_right = 366.0
+offset_bottom = 636.0
+texture = ExtResource("3_puvni")
+expand_mode = 1
+
+[node name="black6" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 198.0
+offset_top = 608.0
+offset_right = 306.0
+offset_bottom = 652.0
+texture = ExtResource("3_puvni")
+expand_mode = 1
+
+[node name="close" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 258.0
+offset_top = 49.0
+offset_right = 298.0
+offset_bottom = 89.0
+
+[connection signal="pressed" from="close" to="." method="_on_close_pressed"]

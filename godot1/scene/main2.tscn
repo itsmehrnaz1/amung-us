@@ -1,0 +1,127 @@
+[gd_scene load_steps=6 format=3 uid="uid://cmnq536awxskb"]
+
+[ext_resource type="Script" path="res://scene/main2.gd" id="1_hasrp"]
+[ext_resource type="Texture2D" uid="uid://bqnffb7ux674d" path="res://assest/main1.jpg" id="1_xertb"]
+[ext_resource type="Texture2D" uid="uid://ik7a13adbgw7" path="res://assest/creat game green.png" id="3_rejup"]
+[ext_resource type="Texture2D" uid="uid://otrdrwari4v4" path="res://assest/black..png" id="4_8hera"]
+[ext_resource type="Texture2D" uid="uid://c0j8olepvbqfa" path="res://assest/find game.jpg" id="5_5rj0w"]
+
+[node name="main2" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_hasrp")
+
+[node name="bg" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_xertb")
+expand_mode = 1
+
+[node name="back" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 15.0
+offset_top = 586.0
+offset_right = 117.0
+offset_bottom = 637.0
+ignore_texture_size = true
+
+[node name="creat game- Host" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 432.0
+offset_top = 206.0
+offset_right = 721.0
+offset_bottom = 272.0
+texture_pressed = ExtResource("3_rejup")
+
+[node name="languge" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 1086.0
+offset_top = 569.0
+offset_right = 1126.0
+offset_bottom = 609.0
+
+[node name="black" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 1073.0
+offset_top = 620.0
+offset_right = 1143.0
+offset_bottom = 639.0
+texture = ExtResource("4_8hera")
+
+[node name="black 2" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 122.0
+offset_bottom = 40.0
+texture = ExtResource("4_8hera")
+
+[node name="black 3" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 488.0
+offset_top = 576.0
+offset_right = 655.0
+offset_bottom = 606.0
+texture = ExtResource("4_8hera")
+expand_mode = 1
+
+[node name="Find game" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 481.0
+offset_top = 399.0
+offset_right = 677.0
+offset_bottom = 447.0
+
+[node name="TextureButton" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 398.0
+offset_top = 379.0
+offset_right = 751.0
+offset_bottom = 470.0
+texture_pressed = ExtResource("5_5rj0w")
+
+[node name="TextureButton2" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 1088.0
+offset_top = 30.0
+offset_right = 1128.0
+offset_bottom = 70.0
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 468.0
+offset_top = 561.0
+offset_right = 685.0
+offset_bottom = 620.0
+theme_override_font_sizes/font_size = 32
+text = "Enter Code"
+
+[node name="TextEdit" type="TextEdit" parent="."]
+visible = false
+layout_mode = 0
+offset_left = 488.0
+offset_top = 565.0
+offset_right = 666.0
+offset_bottom = 609.0
+
+[node name="Button2" type="Button" parent="."]
+layout_mode = 0
+offset_left = 339.0
+offset_top = 37.0
+offset_right = 815.0
+offset_bottom = 108.0
+theme_override_font_sizes/font_size = 50
+
+[connection signal="pressed" from="back" to="." method="_on_back_pressed"]
+[connection signal="pressed" from="creat game- Host" to="." method="_on_creat_game_host_pressed"]
+[connection signal="pressed" from="languge" to="." method="_on_languge_pressed"]
+[connection signal="pressed" from="TextureButton" to="." method="_on_texture_button_pressed"]
+[connection signal="pressed" from="TextureButton2" to="." method="_on_texture_button_2_pressed"]
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="text_changed" from="TextEdit" to="." method="_on_text_edit_text_changed"]

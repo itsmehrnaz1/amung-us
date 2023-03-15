@@ -1,0 +1,44 @@
+[gd_scene load_steps=3 format=3 uid="uid://exws3rygkueb"]
+
+[ext_resource type="Script" path="res://scene/you win.gd" id="1_0x8lr"]
+[ext_resource type="Texture2D" uid="uid://dlgxu6e367fkc" path="res://assest/you win.png" id="2_7s4rk"]
+
+[node name="you win" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_0x8lr")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_7s4rk")
+expand_mode = 1
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 554.0
+offset_top = 241.0
+offset_right = 870.0
+offset_bottom = 360.0
+theme_override_font_sizes/font_size = 70
+text = "Next Level"
+
+[node name="Button2" type="Button" parent="."]
+layout_mode = 0
+offset_left = 558.0
+offset_top = 418.0
+offset_right = 908.0
+offset_bottom = 537.0
+theme_override_font_sizes/font_size = 70
+text = "Exit"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]

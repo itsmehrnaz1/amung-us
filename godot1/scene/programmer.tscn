@@ -1,0 +1,34 @@
+[gd_scene load_steps=3 format=3 uid="uid://dbfjbnefhjsp3"]
+
+[ext_resource type="Script" path="res://scene/programmer.gd" id="1_sodmo"]
+[ext_resource type="Texture2D" uid="uid://bv0t5qxsbcfej" path="res://assest/programmer.jpg" id="2_nytbd"]
+
+[node name="programmer" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_sodmo")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -101.0
+offset_right = 152.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_nytbd")
+expand_mode = 1
+
+[node name="close" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 263.0
+offset_top = 55.0
+offset_right = 303.0
+offset_bottom = 95.0
+
+[connection signal="pressed" from="close" to="." method="_on_close_pressed"]
